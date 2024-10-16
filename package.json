@@ -1,0 +1,37 @@
+{
+  "name": "editorjs-undo-fix",
+  "version": "1.0.0",
+  "keywords": [
+    "undo manager",
+    "editorjs"
+  ],
+  "description": "Undo/Redo for Editor.js",
+  "license": "MIT",
+  "repository": "https://github.com/tukao89/editor.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/undo.umd.js",
+  "module": "./dist/undo.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/undo.mjs",
+      "require": "./dist/undo.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": {
+    "name": "Fox",
+    "email": "tu.phunganh@gmail.com"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0",
+    "vite-plugin-css-injected-by-js": "^3.3.0"
+  },
+  "dependencies": {
+    "@codexteam/icons": "^0.0.4"
+  }
+}
